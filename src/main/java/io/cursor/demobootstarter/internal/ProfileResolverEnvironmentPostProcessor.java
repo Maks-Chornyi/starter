@@ -10,6 +10,7 @@ public class ProfileResolverEnvironmentPostProcessor implements  EnvironmentPost
     public void postProcessEnvironment(ConfigurableEnvironment environment, SpringApplication application) {
         for(int i = 0; i < 5; i++)
             System.out.println("Go hard... Or go home");
+        System.out.println("And don't forget go to localhost:8080 )))");
 
         if (environment.getActiveProfiles().length==0)
                 environment.addActiveProfile("DEV");
